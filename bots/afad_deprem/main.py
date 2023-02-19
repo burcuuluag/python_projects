@@ -1,0 +1,153 @@
+import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta
+from time import mktime
+import telegram
+import asyncio
+import requests
+from datetime import datetime
+import json
+import datetime
+import os
+
+
+FILE = './filter.xml'
+ID_FILE = './eventid.json'
+
+
+def read_stored_ids():
+    ids_info = []
+    try:
+        with open(ID_FILE, "r") as f:
+            ids_info = json.load(f)
+    except:
+        pass
+    return ids_info
+
+
+def get_requests():
+    end_time = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+    start_time = (datetime.datetime.now() - timedelta(hours=24)
+                  ).strftime("%Y-%m-%dT%H:%M:%S")
+    url = f"https://deprem.afad.gov.tr/apiv2/event/filter?minlat=36&maxlat=42&minlon=26&maxlon=45&start={start_time}&end={end_time}&minmag=4&format=xml"
+    response = requests.get(url).text
+    return response
+
+
+def write_to_file(response):
+    with open(FILE, "w") as f:
+        f.write(str(response))
+        f.close()
+
+
+def parse(FILE):
+    tree = ET.parse(FILE)
+    root = tree.getroot()
+
+    namespace = "{http://schemas.datacontract.org/2004/07/EventAPIv2.Model}"
+    earthquake_list = []
+    for earthquake in root.findall(f"{namespace}Earthquake"):
+        entry_dict = {}
+        entry_dict['country'] = earthquake.find(f"{namespace}Country").text
+        entry_dict['date'] = earthquake.find(f"{namespace}Date").text
+        entry_dict['depth'] = earthquake.find(f"{namespace}Depth").text
+        entry_dict['eventid'] = earthquake.find(f"{namespace}EventID").text
+        entry_dict['latitude'] = earthquake.find(f"{namespace}Latitude").text
+        entry_dict['location'] = earthquake.find(f"{namespace}Location").text
+        entry_dict['longitude'] = earthquake.find(f"{namespace}Longitude").text
+        entry_dict['magnitude'] = earthquake.find(f"{namespace}Magnitude").text
+        entry_dict['province'] = earthquake.find(f"{namespace}Province").text
+        earthquake_list.append(entry_dict)
+    return earthquake_list
+
+
+def unique_earthquake_list(earthquake_list):
+    unique_earthquake_list = []
+    unique_ids = set()
+
+    for item in earthquake_list:
+        if item['eventid'] not in unique_ids:
+            unique_ids.add(item['eventid'])
+            unique_earthquake_list.append(item)
+        else:
+            continue
+
+    return unique_earthquake_list
+
+
+def compare_eventid(ids_info, unique_earthquake_list):
+    new_earthquake_list = []
+    if ids_info != []:
+        for item1 in unique_earthquake_list:
+            for item2 in ids_info:
+                if item1['eventid'] == item2['eventid']:
+                    break
+            else:
+                pub_time = datetime.datetime.fromtimestamp(mktime(
+                    datetime.datetime.strptime(item1["date"], '%Y-%m-%dT%H:%M:%S').timetuple()))
+                if pub_time >= (datetime.datetime.now() - timedelta(hours=24)):
+                    new_earthquake_list.append(item1)
+    else:
+        new_earthquake_list = unique_earthquake_list
+
+    return new_earthquake_list
+
+
+def write_to_earthquake_list(ids_info, new_earthquake_list):
+    combined_info = ids_info + new_earthquake_list
+    with open(ID_FILE, "w") as f:
+        json.dump(combined_info, f, indent=2)
+    return new_earthquake_list
+
+
+def format_message(new_earthquake_list):
+    msg_list = []
+    for eartquake in new_earthquake_list:
+        if eartquake['country'] == 'İran' or eartquake['country'] == 'Yunanistan' or eartquake['country'] == 'Ermenistan' or eartquake['country'] == 'Suriye':
+            continue
+        date = eartquake['date']
+        date_format = '%Y-%m-%dT%H:%M:%S'
+        dates = datetime.datetime.strptime(date, date_format)
+        new_date = dates + datetime.timedelta(hours=3)
+        depth = eartquake['depth']
+        latitude = eartquake['latitude']
+        longitude = eartquake['longitude']
+        location = eartquake['location']
+        magnitude = eartquake['magnitude']
+        msg_list.append(
+            f'{new_date}\n*Yer:* [{location}](https://www.google.com/maps/@{latitude},{longitude},15z)\n*Büyüklük:* {magnitude}\n*Derinlik:* {depth} km\n')
+    return msg_list
+
+
+async def send_message(bot, msg_list):
+    if len(msg_list) > 5:
+        for i, msg in enumerate(msg_list):
+            await bot.sendMessage(CHAT_ID, msg, parse_mode=telegram.constants.ParseMode.MARKDOWN,
+                                  disable_notification=True)
+            if (i+1) % 5 == 0:
+                await asyncio.sleep(60)
+    else:
+        for msg in msg_list:
+            await bot.sendMessage(CHAT_ID, msg, parse_mode=telegram.constants.ParseMode.MARKDOWN,
+                                  disable_notification=True)
+
+
+if __name__ == '__main__':
+    CHAT_ID = os.getenv('CHAT_ID')
+    TOKEN = os.getenv('TOKEN')
+
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+
+    if CHAT_ID != None and TOKEN != None:
+        bot = telegram.Bot(TOKEN)
+
+        stored = read_stored_ids()
+        response = get_requests()
+        write_to_file(response)
+        feed = parse(FILE)
+        new_id = compare_eventid(stored, feed)
+        write_to_earthquake_list(stored, new_id)
+        msg = format_message(new_id)
+        loop.run_until_complete(send_message(bot, msg))
+    else:
+        raise SystemExit("Make sure you define chat id and token.")
