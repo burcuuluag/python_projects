@@ -10,7 +10,6 @@ import datetime
 import os
 
 
-FILE = './filter.xml'
 ID_FILE = './eventid.json'
 
 
@@ -32,15 +31,8 @@ def get_requests():
     response = requests.get(url).text
     return response
 
-
-def write_to_file(response):
-    with open(FILE, "w") as f:
-        f.write(str(response))
-        f.close()
-
-
-def parse(FILE):
-    tree = ET.parse(FILE)
+def parse(response):
+    tree = ET.ElementTree(ET.fromstring(response))
     root = tree.getroot()
 
     namespace = "{http://schemas.datacontract.org/2004/07/EventAPIv2.Model}"
@@ -101,6 +93,7 @@ def write_to_earthquake_list(ids_info, new_earthquake_list):
 
 def format_message(new_earthquake_list):
     msg_list = []
+    notif = False
     for eartquake in new_earthquake_list:
         if eartquake['country'] == 'İran' or eartquake['country'] == 'Yunanistan' or eartquake['country'] == 'Ermenistan' or eartquake['country'] == 'Suriye':
             continue
@@ -112,23 +105,28 @@ def format_message(new_earthquake_list):
         latitude = eartquake['latitude']
         longitude = eartquake['longitude']
         location = eartquake['location']
-        magnitude = eartquake['magnitude']
+        magnitude = float(eartquake['magnitude'])
+        if magnitude >= 7:
+            color_code = "⚫️"
+        elif magnitude >= 6:
+            color_code = "🔴"
+        elif magnitude >= 5:
+            color_code = "🟠"
+        elif magnitude >= 4:
+            color_code = "🟡"
+        notif = magnitude <= 5
         msg_list.append(
-            f'{new_date}\n*Yer:* [{location}](https://www.google.com/maps/@{latitude},{longitude},15z)\n*Büyüklük:* {magnitude}\n*Derinlik:* {depth} km\n')
-    return msg_list
+            f'{color_code} *{magnitude}* - [{location}](https://www.google.com/maps/@{latitude},{longitude},15z)\n\n'
+            f'🕐 *Tarih:* {new_date}\n🌍 *Yer:* {latitude}, {longitude}\n⬇️ *Derinlik:* {depth} km')
+    return msg_list, notif
 
 
-async def send_message(bot, msg_list):
-    if len(msg_list) > 5:
-        for i, msg in enumerate(msg_list):
-            await bot.sendMessage(CHAT_ID, msg, parse_mode=telegram.constants.ParseMode.MARKDOWN,
-                                  disable_notification=True)
-            if (i+1) % 5 == 0:
-                await asyncio.sleep(60)
-    else:
-        for msg in msg_list:
-            await bot.sendMessage(CHAT_ID, msg, parse_mode=telegram.constants.ParseMode.MARKDOWN,
-                                  disable_notification=True)
+async def send_message(bot, msg_list, notif):
+    for i, msg in enumerate(msg_list):
+        await bot.sendMessage(CHAT_ID, msg, parse_mode=telegram.constants.ParseMode.MARKDOWN,
+                                disable_notification=notif)
+        if (i+1) % 5 == 0:
+            await asyncio.sleep(60)
 
 
 if __name__ == '__main__':
@@ -143,11 +141,10 @@ if __name__ == '__main__':
 
         stored = read_stored_ids()
         response = get_requests()
-        write_to_file(response)
-        feed = parse(FILE)
+        feed = parse(response)
         new_id = compare_eventid(stored, feed)
         write_to_earthquake_list(stored, new_id)
-        msg = format_message(new_id)
-        loop.run_until_complete(send_message(bot, msg))
+        msg, notif = format_message(new_id)
+        loop.run_until_complete(send_message(bot, msg, notif))
     else:
         raise SystemExit("Make sure you define chat id and token.")
