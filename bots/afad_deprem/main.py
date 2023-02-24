@@ -114,7 +114,7 @@ def format_message(new_earthquake_list):
             color_code = "🟠"
         elif magnitude >= 4:
             color_code = "🟡"
-        notif = magnitude <= 5
+        notif = magnitude < 5
         msg_list.append(
             f'{color_code} *{magnitude}* - [{location}](https://www.google.com/maps/@{latitude},{longitude},15z)\n\n'
             f'🕐 *Tarih:* {new_date}\n🌍 *Yer:* {latitude}, {longitude}\n⬇️ *Derinlik:* {depth} km')
