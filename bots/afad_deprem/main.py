@@ -29,7 +29,10 @@ def get_requests():
                   ).strftime("%Y-%m-%dT%H:%M:%S")
     url = f"https://deprem.afad.gov.tr/apiv2/event/filter?minlat=36&maxlat=42&minlon=26&maxlon=45&start={start_time}&end={end_time}&minmag=4&format=xml"
     response = requests.get(url).text
+    #with open("filter.xml", "r") as f:
+    #    response = f.read()
     return response
+
 
 def parse(response):
     tree = ET.ElementTree(ET.fromstring(response))
@@ -90,13 +93,22 @@ def write_to_earthquake_list(ids_info, new_earthquake_list):
         json.dump(combined_info, f, indent=2)
     return new_earthquake_list
 
+def remove_unsupported_characters(new_earthquake_list):
+    for item in new_earthquake_list:
+        item['location'] = item['location'].replace("[", "").replace("]", "")
+        item['country'] = item['country'].replace("[", "").replace("]", "")
+    return new_earthquake_list
+
 
 def format_message(new_earthquake_list):
     msg_list = []
     notif = False
     for eartquake in new_earthquake_list:
-        if eartquake['country'] == 'İran' or eartquake['country'] == 'Yunanistan' or eartquake['country'] == 'Ermenistan' or eartquake['country'] == 'Suriye':
-            continue
+        #if eartquake['country'] == "Bulgaristan" or eartquake['country'] == 'İran' or \
+        #   eartquake['country'] == "Irak" or eartquake['country'] == 'Yunanistan' or \
+        #   eartquake['country'] == 'Ermenistan' or eartquake['country'] == 'Suriye' or \
+        #   eartquake['country'] == "Gürcistan" or eartquake['country'] == "Azerbaycan":
+        #    continue
         date = eartquake['date']
         date_format = '%Y-%m-%dT%H:%M:%S'
         dates = datetime.datetime.strptime(date, date_format)
@@ -116,7 +128,7 @@ def format_message(new_earthquake_list):
             color_code = "🟡"
         notif = magnitude < 5
         msg_list.append(
-            f'{color_code} *{magnitude}* - [{location}](https://www.google.com/maps/@{latitude},{longitude},15z)\n\n'
+            f'{color_code} *{magnitude}* - [{location}](https://www.google.com/maps/@?api=1&map_action=map&basemap=satellite&center={latitude},{longitude}&zoom=12)\n\n'
             f'🕐 *Tarih:* {new_date}\n🌍 *Yer:* {latitude}, {longitude}\n⬇️ *Derinlik:* {depth} km')
     return msg_list, notif
 
@@ -144,7 +156,8 @@ if __name__ == '__main__':
         feed = parse(response)
         new_id = compare_eventid(stored, feed)
         write_to_earthquake_list(stored, new_id)
-        msg, notif = format_message(new_id)
+        unsupported_chr = remove_unsupported_characters(new_id)
+        msg, notif = format_message(unsupported_chr)
         loop.run_until_complete(send_message(bot, msg, notif))
     else:
         raise SystemExit("Make sure you define chat id and token.")
