@@ -32,15 +32,14 @@ def parse_rss_announcement():
 
 
 def change_date_format(entry_list):
-    updated_date_list = []
     rss_date_format = "%a, %d %b %Y %H:%M:%S %z"
     new_date_format = "%Y-%m-%dT%H:%M:%S.%fZ"
+    updated_date_list = []
     for i in entry_list:
         dt = datetime.strptime(i['updated'], rss_date_format)
         dt_str = dt.strftime(new_date_format)
-        new_dict = i.copy()
-        new_dict['updated'] = dt_str
-        updated_date_list.append(new_dict)
+        i['updated'] = dt_str
+        updated_date_list.append(i)
     return updated_date_list
 
 
@@ -48,10 +47,10 @@ def store_date(updated_date_list):
     if len(updated_date_list) != 0:
         with open(FILE, 'w') as f:
             json.dump(updated_date_list[0]['updated'], f)
-            f.close()
 
 
 def compare_date_info(date_info, updated_date_list):
+    new_date_format = "%Y-%m-%dT%H:%M:%S.%fZ"
     new_list = []
     if date_info != '':
         for i in range(len(updated_date_list)):
@@ -60,20 +59,21 @@ def compare_date_info(date_info, updated_date_list):
     else:
         for i in range(len(updated_date_list)):
             new_list.append(updated_date_list[i])
-    return new_list
+    sorted_date_list = sorted(new_list, key=lambda x: datetime.strptime(x['updated'], new_date_format))
+    return sorted_date_list
 
 
-def add_ascape_chararacter(new_list):
+def add_ascape_chararacter(sorted_date_list):
     unsupported = '_*[`'
-    for item in new_list:
+    for item in sorted_date_list:
         for chr in unsupported:
             item['title'] = item['title'].replace(chr, '\\' + chr)
 
-    return new_list
+    return sorted_date_list
 
-def format_message(new_list):
+def format_message(sorted_date_list):
     msg_list = []
-    for i in new_list:
+    for i in sorted_date_list:
         title = i['title']
         link = i['link']
         date = i['updated']
