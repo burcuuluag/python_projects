@@ -8,7 +8,7 @@ import os
 FILE = "./announcement.txt"
 
 def read_announcement_info():
-    date_info = []
+    date_info = ''
     try:
         with open(FILE, 'r') as f:
             date_info = json.load(f)
@@ -81,7 +81,7 @@ def format_message(sorted_date_list):
         new_date_format = "%d-%m-%Y  %H:%M:%S"
         format_date = datetime.strptime(date, old_date_format)
         format_date = format_date.strftime(new_date_format)
-        msg_list.append(f'📣 [{title}]({link})\n\n🗓 *Duyuru tarihi:* {format_date}\n')
+        msg_list.append(f'📣 [{title}]({link})\n\n🗓 *Tarih:* {format_date}\n')
     return msg_list
 
 
