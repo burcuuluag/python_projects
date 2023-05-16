@@ -1,0 +1,137 @@
+<ArrayOfEarthquake xmlns:i="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://schemas.datacontract.org/2004/07/EventAPIv2.Model">
+    <Earthquake>
+        <Country>Türkiye</Country>
+        <Date>2023-02-18T16:14:39</Date>
+        <Depth>7</Depth>
+        <District>Çelikhan</District>
+        <EventID>549894</EventID>
+        <Latitude>38.075</Latitude>
+        <Location>Çelikhan (Adıyaman)</Location>
+        <Longitude>38.171</Longitude>
+        <Magnitude>4.3</Magnitude>
+        <Neighborhood>Gölbağı</Neighborhood>
+        <Province>Adıyaman</Province>
+        <Rms>0.59</Rms>
+        <Type>MW</Type>
+        <isEventUpdate>false</isEventUpdate>
+        <lastUpdateDate i:nil="true" />
+    </Earthquake>
+    <Earthquake>
+        <Country>Türkiye</Country>
+        <Date>2023-02-18T19:31:31</Date>
+        <Depth>6.2</Depth>
+        <District>Göksun</District>
+        <EventID>549953</EventID>
+        <Latitude>38.08</Latitude>
+        <Location>Göksun (Kahramanmaraş)</Location>
+        <Longitude>36.602</Longitude>
+        <Magnitude>5.1</Magnitude>
+        <Neighborhood>Kanlıkavak</Neighborhood>
+        <Province>Kahramanmaraş</Province>
+        <Rms>0.29</Rms>
+        <Type>MW</Type>
+        <isEventUpdate>true</isEventUpdate>
+        <lastUpdateDate>2023-02-18T19:45:14.251956</lastUpdateDate>
+    </Earthquake>
+    <Earthquake>
+        <Country>Türkiye</Country>
+        <Date>2023-02-18T20:56:06</Date>
+        <Depth>13.07</Depth>
+        <District>Hassa</District>
+        <EventID>549972</EventID>
+        <Latitude>36.854</Latitude>
+        <Location>Hassa (Hatay)</Location>
+        <Longitude>36.497</Longitude>
+        <Magnitude>4.1</Magnitude>
+        <Neighborhood>Yeniyapan</Neighborhood>
+        <Province>Hatay</Province>
+        <Rms>0.5</Rms>
+        <Type>MW</Type>
+        <isEventUpdate>false</isEventUpdate>
+        <lastUpdateDate i:nil="true" />
+    </Earthquake>
+    <Earthquake>
+        <Country>Türkiye</Country>
+        <Date>2023-02-19T00:56:10</Date>
+        <Depth>7.06</Depth>
+        <District>Saimbeyli</District>
+        <EventID>550046</EventID>
+        <Latitude>38.09</Latitude>
+        <Location>Saimbeyli (Adana)</Location>
+        <Longitude>36.239</Longitude>
+        <Magnitude>4.4</Magnitude>
+        <Neighborhood>Beypınarı</Neighborhood>
+        <Province>Adana</Province>
+        <Rms>0.43</Rms>
+        <Type>MW</Type>
+        <isEventUpdate>false</isEventUpdate>
+        <lastUpdateDate i:nil="true" />
+    </Earthquake>
+    <Earthquake>
+        <Country>Türkiye</Country>
+        <Date>2023-02-19T03:59:11</Date>
+        <Depth>10.07</Depth>
+        <District>Türkoğlu</District>
+        <EventID>550085</EventID>
+        <Latitude>37.25</Latitude>
+        <Location>Türkoğlu (Kahramanmaraş)</Location>
+        <Longitude>36.825</Longitude>
+        <Magnitude>4.3</Magnitude>
+        <Neighborhood>Şekeroba</Neighborhood>
+        <Province>Kahramanmaraş</Province>
+        <Rms>0.4</Rms>
+        <Type>MW</Type>
+        <isEventUpdate>false</isEventUpdate>
+        <lastUpdateDate i:nil="true" />
+    </Earthquake>
+    <Earthquake>
+        <Country>Türkiye</Country>
+        <Date>2023-02-19T04:07:40</Date>
+        <Depth>4.98</Depth>
+        <District>Nurdağı</District>
+        <EventID>550087</EventID>
+        <Latitude>37.236</Latitude>
+        <Location>Nurdağı (Gaziantep)</Location>
+        <Longitude>36.835</Longitude>
+        <Magnitude>4.5</Magnitude>
+        <Neighborhood>Kırışkal</Neighborhood>
+        <Province>Gaziantep</Province>
+        <Rms>0.29</Rms>
+        <Type>MW</Type>
+        <isEventUpdate>false</isEventUpdate>
+        <lastUpdateDate i:nil="true" />
+    </Earthquake>
+    <Earthquake>
+        <Country>Türkiye</Country>
+        <Date>2023-03-02T12:04:32</Date>
+        <Depth>7</Depth>
+        <District>Blablabla</District>
+        <EventID>424949</EventID>
+        <Latitude>38.277</Latitude>
+        <Location>Irak</Location>
+        <Longitude>38.233</Longitude>
+        <Magnitude>4.7</Magnitude>
+        <Neighborhood>Mullakasım</Neighborhood>
+        <Province>Malatya</Province>
+        <Rms>0.4</Rms>
+        <Type>MW</Type>
+        <isEventUpdate>false</isEventUpdate>
+        <lastUpdateDate i:nil="true" />
+    </Earthquake>
+    <Earthquake>
+        <Country>Türkiye</Country>
+        <Date>2023-03-03T09:22:21</Date>
+        <Depth>14.5</Depth>
+        <District>Foça</District>
+        <EventID>555413</EventID>
+        <Latitude>38.638</Latitude>
+        <Location>Ege Denizi - İzmir Körfezi - [04.87 km] Foça (İzmir)</Location>
+        <Longitude>26.701</Longitude>
+        <Magnitude>4.1</Magnitude>
+        <Province>İzmir</Province>
+        <Rms>0.25</Rms>
+        <Type>MW</Type>
+        <isEventUpdate>false</isEventUpdate>
+    </Earthquake>
+</ArrayOfEarthquake>
