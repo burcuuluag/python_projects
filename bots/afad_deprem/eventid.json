@@ -1,0 +1,24 @@
+[
+  {
+    "country": "T\u00fcrkiye",
+    "date": "2023-03-06T04:57:33",
+    "depth": "13.29",
+    "eventid": "558841",
+    "latitude": "38.973",
+    "location": "Solhan (Bing\u00f6l)",
+    "longitude": "41.021",
+    "magnitude": "4.2",
+    "province": "Bing\u00f6l"
+  },
+  {
+    "country": "T\u00fcrkiye",
+    "date": "2023-03-06T11:02:58",
+    "depth": "7",
+    "eventid": "559085",
+    "latitude": "36.351",
+    "location": "Arsuz (Hatay)",
+    "longitude": "35.953",
+    "magnitude": "4.1",
+    "province": "Hatay"
+  }
+]
