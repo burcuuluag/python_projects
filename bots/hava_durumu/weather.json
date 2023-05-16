@@ -1,0 +1,1463 @@
+{
+    "cod": "200",
+    "message": 0,
+    "cnt": 40,
+    "list": [
+        {
+            "dt": 1683871200,
+            "main": {
+                "temp": 13.97,
+                "feels_like": 13.43,
+                "temp_min": 13.97,
+                "temp_max": 15.23,
+                "pressure": 1014,
+                "sea_level": 1014,
+                "grnd_level": 1014,
+                "humidity": 77,
+                "temp_kf": -1.26
+            },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "a\u00e7\u0131k",
+                    "icon": "01d"
+                }
+            ],
+            "clouds": {
+                "all": 0
+            },
+            "wind": {
+                "speed": 2.2,
+                "deg": 354,
+                "gust": 2.72
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-12 06:00:00"
+        },
+        {
+            "dt": 1683882000,
+            "main": {
+                "temp": 15.58,
+                "feels_like": 15.05,
+                "temp_min": 15.58,
+                "temp_max": 18.79,
+                "pressure": 1014,
+                "sea_level": 1014,
+                "grnd_level": 1014,
+                "humidity": 71,
+                "temp_kf": -3.21
+            },
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 az bulutlu",
+                    "icon": "03d"
+                }
+            ],
+            "clouds": {
+                "all": 33
+            },
+            "wind": {
+                "speed": 3.2,
+                "deg": 343,
+                "gust": 3.35
+            },
+            "visibility": 10000,
+            "pop": 0.01,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-12 09:00:00"
+        },
+        {
+            "dt": 1683892800,
+            "main": {
+                "temp": 18.42,
+                "feels_like": 17.96,
+                "temp_min": 18.42,
+                "temp_max": 20.65,
+                "pressure": 1015,
+                "sea_level": 1015,
+                "grnd_level": 1014,
+                "humidity": 63,
+                "temp_kf": -2.23
+            },
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 bulutlu",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 67
+            },
+            "wind": {
+                "speed": 4.87,
+                "deg": 331,
+                "gust": 4.53
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-12 12:00:00"
+        },
+        {
+            "dt": 1683903600,
+            "main": {
+                "temp": 19.44,
+                "feels_like": 18.98,
+                "temp_min": 19.44,
+                "temp_max": 19.44,
+                "pressure": 1015,
+                "sea_level": 1015,
+                "grnd_level": 1014,
+                "humidity": 59,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 bulutlu",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 74
+            },
+            "wind": {
+                "speed": 4.16,
+                "deg": 4,
+                "gust": 4.22
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-12 15:00:00"
+        },
+        {
+            "dt": 1683914400,
+            "main": {
+                "temp": 14.43,
+                "feels_like": 13.89,
+                "temp_min": 14.43,
+                "temp_max": 14.43,
+                "pressure": 1017,
+                "sea_level": 1017,
+                "grnd_level": 1016,
+                "humidity": 75,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 az bulutlu",
+                    "icon": "03n"
+                }
+            ],
+            "clouds": {
+                "all": 41
+            },
+            "wind": {
+                "speed": 3.62,
+                "deg": 15,
+                "gust": 5.17
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-12 18:00:00"
+        },
+        {
+            "dt": 1683925200,
+            "main": {
+                "temp": 12.57,
+                "feels_like": 11.97,
+                "temp_min": 12.57,
+                "temp_max": 12.57,
+                "pressure": 1018,
+                "sea_level": 1018,
+                "grnd_level": 1017,
+                "humidity": 80,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "a\u00e7\u0131k",
+                    "icon": "01n"
+                }
+            ],
+            "clouds": {
+                "all": 0
+            },
+            "wind": {
+                "speed": 2.48,
+                "deg": 21,
+                "gust": 3.5
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-12 21:00:00"
+        },
+        {
+            "dt": 1683936000,
+            "main": {
+                "temp": 11.35,
+                "feels_like": 10.76,
+                "temp_min": 11.35,
+                "temp_max": 11.35,
+                "pressure": 1018,
+                "sea_level": 1018,
+                "grnd_level": 1017,
+                "humidity": 85,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "a\u00e7\u0131k",
+                    "icon": "01n"
+                }
+            ],
+            "clouds": {
+                "all": 0
+            },
+            "wind": {
+                "speed": 2.21,
+                "deg": 24,
+                "gust": 2.92
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-13 00:00:00"
+        },
+        {
+            "dt": 1683946800,
+            "main": {
+                "temp": 10.53,
+                "feels_like": 9.96,
+                "temp_min": 10.53,
+                "temp_max": 10.53,
+                "pressure": 1019,
+                "sea_level": 1019,
+                "grnd_level": 1018,
+                "humidity": 89,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "a\u00e7\u0131k",
+                    "icon": "01n"
+                }
+            ],
+            "clouds": {
+                "all": 1
+            },
+            "wind": {
+                "speed": 2.27,
+                "deg": 32,
+                "gust": 2.81
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-13 03:00:00"
+        },
+        {
+            "dt": 1683957600,
+            "main": {
+                "temp": 15.27,
+                "feels_like": 14.63,
+                "temp_min": 15.27,
+                "temp_max": 15.27,
+                "pressure": 1020,
+                "sea_level": 1020,
+                "grnd_level": 1019,
+                "humidity": 68,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "a\u00e7\u0131k",
+                    "icon": "01d"
+                }
+            ],
+            "clouds": {
+                "all": 7
+            },
+            "wind": {
+                "speed": 2.8,
+                "deg": 22,
+                "gust": 3.71
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-13 06:00:00"
+        },
+        {
+            "dt": 1683968400,
+            "main": {
+                "temp": 20.62,
+                "feels_like": 19.99,
+                "temp_min": 20.62,
+                "temp_max": 20.62,
+                "pressure": 1020,
+                "sea_level": 1020,
+                "grnd_level": 1019,
+                "humidity": 48,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 az bulutlu",
+                    "icon": "03d"
+                }
+            ],
+            "clouds": {
+                "all": 36
+            },
+            "wind": {
+                "speed": 3.45,
+                "deg": 0,
+                "gust": 3.97
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-13 09:00:00"
+        },
+        {
+            "dt": 1683979200,
+            "main": {
+                "temp": 23.38,
+                "feels_like": 22.79,
+                "temp_min": 23.38,
+                "temp_max": 23.38,
+                "pressure": 1019,
+                "sea_level": 1019,
+                "grnd_level": 1018,
+                "humidity": 39,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "az bulutlu",
+                    "icon": "02d"
+                }
+            ],
+            "clouds": {
+                "all": 19
+            },
+            "wind": {
+                "speed": 4.95,
+                "deg": 326,
+                "gust": 4.84
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-13 12:00:00"
+        },
+        {
+            "dt": 1683990000,
+            "main": {
+                "temp": 21.42,
+                "feels_like": 20.79,
+                "temp_min": 21.42,
+                "temp_max": 21.42,
+                "pressure": 1019,
+                "sea_level": 1019,
+                "grnd_level": 1019,
+                "humidity": 45,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 bulutlu",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 57
+            },
+            "wind": {
+                "speed": 5.06,
+                "deg": 323,
+                "gust": 5.54
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-13 15:00:00"
+        },
+        {
+            "dt": 1684000800,
+            "main": {
+                "temp": 16.93,
+                "feels_like": 16.35,
+                "temp_min": 16.93,
+                "temp_max": 16.93,
+                "pressure": 1020,
+                "sea_level": 1020,
+                "grnd_level": 1019,
+                "humidity": 64,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 bulutlu",
+                    "icon": "04n"
+                }
+            ],
+            "clouds": {
+                "all": 78
+            },
+            "wind": {
+                "speed": 2.19,
+                "deg": 355,
+                "gust": 3.03
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-13 18:00:00"
+        },
+        {
+            "dt": 1684011600,
+            "main": {
+                "temp": 15.14,
+                "feels_like": 14.54,
+                "temp_min": 15.14,
+                "temp_max": 15.14,
+                "pressure": 1021,
+                "sea_level": 1021,
+                "grnd_level": 1020,
+                "humidity": 70,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 az bulutlu",
+                    "icon": "03n"
+                }
+            ],
+            "clouds": {
+                "all": 30
+            },
+            "wind": {
+                "speed": 2.01,
+                "deg": 34,
+                "gust": 2.24
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-13 21:00:00"
+        },
+        {
+            "dt": 1684022400,
+            "main": {
+                "temp": 13.8,
+                "feels_like": 13.01,
+                "temp_min": 13.8,
+                "temp_max": 13.8,
+                "pressure": 1020,
+                "sea_level": 1020,
+                "grnd_level": 1019,
+                "humidity": 68,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "az bulutlu",
+                    "icon": "02n"
+                }
+            ],
+            "clouds": {
+                "all": 23
+            },
+            "wind": {
+                "speed": 2.06,
+                "deg": 40,
+                "gust": 2.39
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-14 00:00:00"
+        },
+        {
+            "dt": 1684033200,
+            "main": {
+                "temp": 12.78,
+                "feels_like": 11.92,
+                "temp_min": 12.78,
+                "temp_max": 12.78,
+                "pressure": 1020,
+                "sea_level": 1020,
+                "grnd_level": 1019,
+                "humidity": 69,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 az bulutlu",
+                    "icon": "03n"
+                }
+            ],
+            "clouds": {
+                "all": 48
+            },
+            "wind": {
+                "speed": 2.16,
+                "deg": 68,
+                "gust": 2.44
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-14 03:00:00"
+        },
+        {
+            "dt": 1684044000,
+            "main": {
+                "temp": 18.84,
+                "feels_like": 18.01,
+                "temp_min": 18.84,
+                "temp_max": 18.84,
+                "pressure": 1020,
+                "sea_level": 1020,
+                "grnd_level": 1019,
+                "humidity": 47,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 az bulutlu",
+                    "icon": "03d"
+                }
+            ],
+            "clouds": {
+                "all": 33
+            },
+            "wind": {
+                "speed": 1.83,
+                "deg": 52,
+                "gust": 2.75
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-14 06:00:00"
+        },
+        {
+            "dt": 1684054800,
+            "main": {
+                "temp": 23.99,
+                "feels_like": 23.33,
+                "temp_min": 23.99,
+                "temp_max": 23.99,
+                "pressure": 1020,
+                "sea_level": 1020,
+                "grnd_level": 1019,
+                "humidity": 34,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 az bulutlu",
+                    "icon": "03d"
+                }
+            ],
+            "clouds": {
+                "all": 28
+            },
+            "wind": {
+                "speed": 2.81,
+                "deg": 346,
+                "gust": 3.5
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-14 09:00:00"
+        },
+        {
+            "dt": 1684065600,
+            "main": {
+                "temp": 26.83,
+                "feels_like": 26.35,
+                "temp_min": 26.83,
+                "temp_max": 26.83,
+                "pressure": 1018,
+                "sea_level": 1018,
+                "grnd_level": 1018,
+                "humidity": 31,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 bulutlu",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 54
+            },
+            "wind": {
+                "speed": 3.3,
+                "deg": 327,
+                "gust": 3.88
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-14 12:00:00"
+        },
+        {
+            "dt": 1684076400,
+            "main": {
+                "temp": 24.44,
+                "feels_like": 23.93,
+                "temp_min": 24.44,
+                "temp_max": 24.44,
+                "pressure": 1018,
+                "sea_level": 1018,
+                "grnd_level": 1017,
+                "humidity": 38,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 bulutlu",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 51
+            },
+            "wind": {
+                "speed": 2.56,
+                "deg": 332,
+                "gust": 3.63
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-14 15:00:00"
+        },
+        {
+            "dt": 1684087200,
+            "main": {
+                "temp": 19.15,
+                "feels_like": 18.58,
+                "temp_min": 19.15,
+                "temp_max": 19.15,
+                "pressure": 1018,
+                "sea_level": 1018,
+                "grnd_level": 1018,
+                "humidity": 56,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 az bulutlu",
+                    "icon": "03n"
+                }
+            ],
+            "clouds": {
+                "all": 42
+            },
+            "wind": {
+                "speed": 1.62,
+                "deg": 319,
+                "gust": 1.97
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-14 18:00:00"
+        },
+        {
+            "dt": 1684098000,
+            "main": {
+                "temp": 18.22,
+                "feels_like": 17.66,
+                "temp_min": 18.22,
+                "temp_max": 18.22,
+                "pressure": 1019,
+                "sea_level": 1019,
+                "grnd_level": 1018,
+                "humidity": 60,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "az bulutlu",
+                    "icon": "02n"
+                }
+            ],
+            "clouds": {
+                "all": 13
+            },
+            "wind": {
+                "speed": 1.3,
+                "deg": 317,
+                "gust": 1.76
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-14 21:00:00"
+        },
+        {
+            "dt": 1684108800,
+            "main": {
+                "temp": 17.22,
+                "feels_like": 16.72,
+                "temp_min": 17.22,
+                "temp_max": 17.22,
+                "pressure": 1017,
+                "sea_level": 1017,
+                "grnd_level": 1016,
+                "humidity": 66,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "az bulutlu",
+                    "icon": "02n"
+                }
+            ],
+            "clouds": {
+                "all": 21
+            },
+            "wind": {
+                "speed": 1.03,
+                "deg": 31,
+                "gust": 1.29
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-15 00:00:00"
+        },
+        {
+            "dt": 1684119600,
+            "main": {
+                "temp": 16.62,
+                "feels_like": 16.09,
+                "temp_min": 16.62,
+                "temp_max": 16.62,
+                "pressure": 1016,
+                "sea_level": 1016,
+                "grnd_level": 1015,
+                "humidity": 67,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "az bulutlu",
+                    "icon": "02n"
+                }
+            ],
+            "clouds": {
+                "all": 15
+            },
+            "wind": {
+                "speed": 1.07,
+                "deg": 54,
+                "gust": 1.17
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-15 03:00:00"
+        },
+        {
+            "dt": 1684130400,
+            "main": {
+                "temp": 22.39,
+                "feels_like": 21.94,
+                "temp_min": 22.39,
+                "temp_max": 22.39,
+                "pressure": 1016,
+                "sea_level": 1016,
+                "grnd_level": 1015,
+                "humidity": 48,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "az bulutlu",
+                    "icon": "02d"
+                }
+            ],
+            "clouds": {
+                "all": 20
+            },
+            "wind": {
+                "speed": 1.89,
+                "deg": 59,
+                "gust": 2.66
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-15 06:00:00"
+        },
+        {
+            "dt": 1684141200,
+            "main": {
+                "temp": 27.97,
+                "feels_like": 27.27,
+                "temp_min": 27.97,
+                "temp_max": 27.97,
+                "pressure": 1014,
+                "sea_level": 1014,
+                "grnd_level": 1013,
+                "humidity": 34,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 bulutlu",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 55
+            },
+            "wind": {
+                "speed": 0.98,
+                "deg": 21,
+                "gust": 2.13
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-15 09:00:00"
+        },
+        {
+            "dt": 1684152000,
+            "main": {
+                "temp": 29.05,
+                "feels_like": 28.25,
+                "temp_min": 29.05,
+                "temp_max": 29.05,
+                "pressure": 1013,
+                "sea_level": 1013,
+                "grnd_level": 1012,
+                "humidity": 35,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 bulutlu",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 62
+            },
+            "wind": {
+                "speed": 1.89,
+                "deg": 313,
+                "gust": 2.63
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-15 12:00:00"
+        },
+        {
+            "dt": 1684162800,
+            "main": {
+                "temp": 29.13,
+                "feels_like": 28.32,
+                "temp_min": 29.13,
+                "temp_max": 29.13,
+                "pressure": 1011,
+                "sea_level": 1011,
+                "grnd_level": 1011,
+                "humidity": 35,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "kapal\u0131",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 92
+            },
+            "wind": {
+                "speed": 1.74,
+                "deg": 315,
+                "gust": 2.36
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-15 15:00:00"
+        },
+        {
+            "dt": 1684173600,
+            "main": {
+                "temp": 23.06,
+                "feels_like": 22.83,
+                "temp_min": 23.06,
+                "temp_max": 23.06,
+                "pressure": 1011,
+                "sea_level": 1011,
+                "grnd_level": 1011,
+                "humidity": 54,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "kapal\u0131",
+                    "icon": "04n"
+                }
+            ],
+            "clouds": {
+                "all": 89
+            },
+            "wind": {
+                "speed": 0.28,
+                "deg": 278,
+                "gust": 1.76
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-15 18:00:00"
+        },
+        {
+            "dt": 1684184400,
+            "main": {
+                "temp": 21.71,
+                "feels_like": 21.45,
+                "temp_min": 21.71,
+                "temp_max": 21.71,
+                "pressure": 1011,
+                "sea_level": 1011,
+                "grnd_level": 1011,
+                "humidity": 58,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "kapal\u0131",
+                    "icon": "04n"
+                }
+            ],
+            "clouds": {
+                "all": 89
+            },
+            "wind": {
+                "speed": 0.78,
+                "deg": 87,
+                "gust": 1.3
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-15 21:00:00"
+        },
+        {
+            "dt": 1684195200,
+            "main": {
+                "temp": 20.45,
+                "feels_like": 20.14,
+                "temp_min": 20.45,
+                "temp_max": 20.45,
+                "pressure": 1010,
+                "sea_level": 1010,
+                "grnd_level": 1009,
+                "humidity": 61,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "par\u00e7al\u0131 bulutlu",
+                    "icon": "04n"
+                }
+            ],
+            "clouds": {
+                "all": 62
+            },
+            "wind": {
+                "speed": 0.91,
+                "deg": 72,
+                "gust": 1.15
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-16 00:00:00"
+        },
+        {
+            "dt": 1684206000,
+            "main": {
+                "temp": 20.79,
+                "feels_like": 20.44,
+                "temp_min": 20.79,
+                "temp_max": 20.79,
+                "pressure": 1008,
+                "sea_level": 1008,
+                "grnd_level": 1008,
+                "humidity": 58,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "kapal\u0131",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 100
+            },
+            "wind": {
+                "speed": 2.09,
+                "deg": 105,
+                "gust": 2.04
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-16 03:00:00"
+        },
+        {
+            "dt": 1684216800,
+            "main": {
+                "temp": 26.12,
+                "feels_like": 26.12,
+                "temp_min": 26.12,
+                "temp_max": 26.12,
+                "pressure": 1008,
+                "sea_level": 1008,
+                "grnd_level": 1008,
+                "humidity": 44,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "kapal\u0131",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 99
+            },
+            "wind": {
+                "speed": 2.22,
+                "deg": 135,
+                "gust": 2.99
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-16 06:00:00"
+        },
+        {
+            "dt": 1684227600,
+            "main": {
+                "temp": 29.91,
+                "feels_like": 29.17,
+                "temp_min": 29.91,
+                "temp_max": 29.91,
+                "pressure": 1008,
+                "sea_level": 1008,
+                "grnd_level": 1008,
+                "humidity": 36,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "kapal\u0131",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 96
+            },
+            "wind": {
+                "speed": 3.13,
+                "deg": 232,
+                "gust": 4.6
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-16 09:00:00"
+        },
+        {
+            "dt": 1684238400,
+            "main": {
+                "temp": 28.11,
+                "feels_like": 27.63,
+                "temp_min": 28.11,
+                "temp_max": 28.11,
+                "pressure": 1009,
+                "sea_level": 1009,
+                "grnd_level": 1008,
+                "humidity": 38,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "kapal\u0131",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 98
+            },
+            "wind": {
+                "speed": 5.97,
+                "deg": 218,
+                "gust": 6.8
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-16 12:00:00"
+        },
+        {
+            "dt": 1684249200,
+            "main": {
+                "temp": 23.47,
+                "feels_like": 23.36,
+                "temp_min": 23.47,
+                "temp_max": 23.47,
+                "pressure": 1011,
+                "sea_level": 1011,
+                "grnd_level": 1010,
+                "humidity": 57,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "hafif ya\u011fmur",
+                    "icon": "10d"
+                }
+            ],
+            "clouds": {
+                "all": 100
+            },
+            "wind": {
+                "speed": 4.65,
+                "deg": 298,
+                "gust": 5.52
+            },
+            "visibility": 10000,
+            "pop": 0.36,
+            "rain": {
+                "3h": 0.28
+            },
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-16 15:00:00"
+        },
+        {
+            "dt": 1684260000,
+            "main": {
+                "temp": 21.7,
+                "feels_like": 21.52,
+                "temp_min": 21.7,
+                "temp_max": 21.7,
+                "pressure": 1008,
+                "sea_level": 1008,
+                "grnd_level": 1008,
+                "humidity": 61,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "kapal\u0131",
+                    "icon": "04n"
+                }
+            ],
+            "clouds": {
+                "all": 100
+            },
+            "wind": {
+                "speed": 1.1,
+                "deg": 126,
+                "gust": 1.32
+            },
+            "visibility": 10000,
+            "pop": 0.15,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-16 18:00:00"
+        },
+        {
+            "dt": 1684270800,
+            "main": {
+                "temp": 19.41,
+                "feels_like": 19.21,
+                "temp_min": 19.41,
+                "temp_max": 19.41,
+                "pressure": 1010,
+                "sea_level": 1010,
+                "grnd_level": 1009,
+                "humidity": 69,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "az bulutlu",
+                    "icon": "02n"
+                }
+            ],
+            "clouds": {
+                "all": 18
+            },
+            "wind": {
+                "speed": 2.18,
+                "deg": 219,
+                "gust": 2.52
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-16 21:00:00"
+        },
+        {
+            "dt": 1684281600,
+            "main": {
+                "temp": 17.82,
+                "feels_like": 17.54,
+                "temp_min": 17.82,
+                "temp_max": 17.82,
+                "pressure": 1010,
+                "sea_level": 1010,
+                "grnd_level": 1009,
+                "humidity": 72,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "a\u00e7\u0131k",
+                    "icon": "01n"
+                }
+            ],
+            "clouds": {
+                "all": 9
+            },
+            "wind": {
+                "speed": 1.64,
+                "deg": 184,
+                "gust": 1.82
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-05-17 00:00:00"
+        },
+        {
+            "dt": 1684292400,
+            "main": {
+                "temp": 16.41,
+                "feels_like": 16.04,
+                "temp_min": 16.41,
+                "temp_max": 16.41,
+                "pressure": 1010,
+                "sea_level": 1010,
+                "grnd_level": 1009,
+                "humidity": 74,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "a\u00e7\u0131k",
+                    "icon": "01d"
+                }
+            ],
+            "clouds": {
+                "all": 0
+            },
+            "wind": {
+                "speed": 1.58,
+                "deg": 166,
+                "gust": 1.59
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-05-17 03:00:00"
+        }
+    ],
+    "city": {
+        "id": 311044,
+        "name": "\u0130zmir",
+        "coord": {
+            "lat": 38.4622,
+            "lon": 27.0923
+        },
+        "country": "TR",
+        "population": 3731863,
+        "timezone": 10800,
+        "sunrise": 1683860606,
+        "sunset": 1683911558
+    }
+}
