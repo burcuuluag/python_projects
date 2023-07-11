@@ -33,9 +33,9 @@ print(align_tag)
 
 #butun p etiketlerini bir liste halinde yazdirma
 p_tag = doc.find("p")
-
+#b etiketini yazdirma
 b_tag = p_tag.find("b")
-
+#red rengini yazdirma
 color_tag = b_tag["color"]
 print(color_tag)
 
