@@ -21,3 +21,6 @@ option_tag_first["value"] = "hello world!"
 print(option_tag_first["value"])
 
 print(option_tag_first.attrs)
+
+tags = doc.find_all(["p", "div", "li"])
+print(tags)
